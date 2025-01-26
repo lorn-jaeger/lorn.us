@@ -1,0 +1,13 @@
+{{ define "main" }}
+<strong>{{ .Title }}</strong> | {{ .PublishDate.Format "Jan 2, 2006" }}
+<hr>
+{{ .Content }}
+<hr>
+<p style="text-align: center; margin-top: 12px; padding-top: 0; display: flex; justify-content: space-between; align-items: center;">
+  {{ with .Prev }}<a href="{{ .RelPermalink }}" style="display: inline-block;">&larr; {{ .Title }}</a>{{ else }}<span></span>{{ end }}
+  <a href="https://lorn.us" style="display: inline-block; margin: 0 10px;">https://lorn.us</a>
+  {{ with .Next }}<a href="{{ .RelPermalink }}" style="display: inline-block;">{{ .Title }} &rarr;</a>{{ else }}<span></span>{{ end }}
+</p>
+
+{{ end }}
+

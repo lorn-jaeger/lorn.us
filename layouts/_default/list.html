@@ -1,0 +1,7 @@
+{{ define "main" }}
+    {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+        {{ if eq .Type "posts" }}
+            {{ .PublishDate.Format "2006-01-02" }} <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+        {{ end }}
+    {{ end }}
+{{ end }}

@@ -1,0 +1,23 @@
+baseURL = 'https://lorn.us'
+languageCode = 'en-us'
+title = 'lorn.us'
+
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'doom-one'
+    tabWidth = 4
+    wrapperClass = 'highlight'
+
+
